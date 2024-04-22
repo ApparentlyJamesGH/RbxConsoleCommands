@@ -24,6 +24,9 @@ In the *Settings* module, you can setup the options to however you want, it's mo
 > [!TIP]
 > Setting up commands will require you at the very least beginner level knowledge of Roblox LUA scripting.
 
+> [!NOTE]
+> To view the full commands list, use `help`. And to view RCC internal commands, use `rcc help`. (All RCC commands must be called with the `rcc` prefix.)
+
 In the *Commands* module, you can setup whatever commands you want! The functions' returned arguments are "args" & "API", args referencing to inputted arguments (e.g. "message"), and API referencing the RCC API, which you can use for various custom functions:
 ```lua
 {
@@ -47,9 +50,6 @@ In the *Commands* module, you can setup whatever commands you want! The function
 	},
 }
 ```
-
-> [!INFORMATION]
-> To view the RCC internal commands, use `rcc help`.
 
 ## Extra Information
 The error you get in the console after exeucting a command, `Incomplete statement: expected assignment or a function call`, is nothing you should worry about. This error only pops up because the Roblox console does not register the command name to be an actual command, because it is made programatically and is not an official Roblox command.
