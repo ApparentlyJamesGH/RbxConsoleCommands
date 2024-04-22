@@ -21,6 +21,9 @@ In the *Settings* module, you can setup the options to however you want, it's mo
 }
 ```
 
+> [!INFO]
+> Setting up commands will require you at the very least beginner level knowledge of Roblox LUA scripting.
+
 In the *Commands* module, you can setup whatever commands you want! The functions' returned arguments are "args" & "API", args referencing to inputted arguments (e.g. "message"), and API referencing the RCC API, which you can use for various custom functions:
 ```lua
 {
