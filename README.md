@@ -20,3 +20,27 @@ In the *Settings* module, you can setup the options to however you want, it's mo
 	end,
 }
 ```
+
+In the *Commands* module, you can setup whatever commands you want! The functions' returned arguments are "args" & "API", args referencing to inputted arguments (e.g. "message"), and API referencing the RCC API, which you can use for various custom functions:
+```lua
+{
+	["log [message]"] = {
+		Description = "Logs a message!",
+		Function = function(args, API)
+			local message = args.message
+			print("This is a message sent using the log command: " ..message)
+		end,
+	},
+	["kick [player] [reason]"] = {
+		Description = "Kicks out a player from the server with a reason",
+		Function = function(args, API)
+			local player = API.GetPlayerFromInput(args.player, true)
+			local reason = args.reason or "No reason provided"
+			
+			API.FunctionPlayer(player, function(plyr)
+				plyr:Kick(reason)
+			end)
+		end,
+	},
+}
+```
