@@ -1,4 +1,4 @@
-# RbxConsoleCommands
+# RbxConsoleCommands (RCC)
 RbxConsoleCommands are developer commands, made so game developers can execute specific functions easier and quicker.
 
 > [!CAUTION]
@@ -8,3 +8,15 @@ RbxConsoleCommands are developer commands, made so game developers can execute s
 | ------------- |
 
 Made by [ApparentlyJames](https://apparentlyjames.carrd.co/)
+
+## Basic Usage
+In the *Settings* module, you can setup the options to however you want, it's mostly self explanitory:
+```lua
+{
+	SeperateCommandCalls = print, -- Set to nil, print or warn
+	AfterCallback = function(commandInfo, API)
+		-- Can be used for command logs and stuff
+		print("Command called!")
+	end,
+}
+```
