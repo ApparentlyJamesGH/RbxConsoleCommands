@@ -54,4 +54,4 @@ In the *Commands* module, you can setup whatever commands you want! The function
 ## Extra Information
 - The error you get in the console after exeucting a command, `Incomplete statement: expected assignment or a function call`, is nothing you should worry about. This error only pops up because the Roblox console does not register the command name to be an actual command.
 
-- You can wrap a sentence in brackets ("), to make it one argument.
+- You can wrap a sentence in brackets ("), to make it one argument. (e.g. `kick builderman "sentence argument"`)
